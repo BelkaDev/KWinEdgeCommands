@@ -10,7 +10,7 @@
         "dev": "npm run start && journalctl -f",
         "compile": "scripts/compile.sh && browserify contents/code/source.js -o contents/code/main.js",
         "package": "scripts/package.sh",
-        "install": "npm run compile && npm run package",
+        "bundle": "npm install && npm run compile && npm run package",
         "start": "scripts/start.sh",
         "uninstall": "scripts/uninstall.sh"
     },

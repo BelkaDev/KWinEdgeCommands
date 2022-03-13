@@ -1,5 +1,5 @@
 [Desktop Entry]
-Name=Youtub
+Name=gogogo
 Comment=Generic command for KWin.
 Icon=kwin
 Type=Service
@@ -9,7 +9,7 @@ X-Plasma-MainScript=code/main.js
 X-KWin-Border-Activate=true
 X-KDE-PluginInfo-Author=Belka
 X-KDE-PluginInfo-Email=belk5@hotmail.com
-X-KDE-PluginInfo-Name=youtub
+X-KDE-PluginInfo-Name=gogogo
 X-KDE-PluginInfo-Version=1.0.0
 X-KDE-PluginInfo-License=GPL
 X-KDE-ServiceTypes=KWin/Script

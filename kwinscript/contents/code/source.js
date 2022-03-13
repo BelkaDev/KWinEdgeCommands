@@ -21,7 +21,7 @@ function init() {
     var border = parseInt(borders[i]);
     if (isFinite(border)) {
       registeredBorders.push(border);
-      registerScreenEdge(border, execSync("youtub"));
+      registerScreenEdge(border, execSync("gogogo"));
     }
   }
 }
