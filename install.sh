@@ -32,9 +32,9 @@ fi
 [ ! -d "$HOME/.local/share/dbus-1/services/" ] && mkdir -p $HOME/.local/share/dbus-1/services/
 
 
-name=$(kdialog  --geometry 300X1200+750+500 --title "New Edge Command" --inputbox "<center><br>Enter the command name<br><br></center>") 
+name=$(kdialog  --geometry 300X1200+750+500 --title "New Edge Command" --inputbox "<center><br>Enter the command name (<b>letters only</b>)<br><br></center>") 
 [[ -z "$name" ]] && kdialog --error "Name can't be empty" && exit 1
-command=$(kdialog  --geometry 300X1200+750+500 --title "New Edge Command " --inputbox "<center><br>Paste your command here (or <b>absolute</b> path to a script file)<br></center>*notice: Make sure to try your commands before adding them.<br><br><br>")
+command=$(kdialog  --geometry 300X1200+750+500 --title "New Edge Command " --inputbox "<center><br>Paste your command here (or <b>absolute</b> path to a script file)<br></center><i>*notice</i>: <i>Make sure to try your commands before adding them.</i><br><br><br>")
 [[ -z "$command" ]] && kdialog --error "Command can't be empty" && exit 1
 
 
