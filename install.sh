@@ -22,8 +22,9 @@ echo "${res// /}"
 if [ -d "$HOME/.local/share/kservices5/edgescript" ]; then
 cd "$HOME/.local/share/kservices5/edgescript" 
 else 
-git clone https://github.com/BelkaDev/KWinEdgeCommands /tmp/KWinEdgeCommands
-cd /tmp/KWinEdgeCommands
+repdir=$(mktemp -d)
+git clone https://github.com/BelkaDev/KWinEdgeCommands $repdir
+cd "$repdir
 fi
 
 [ ! -d "$HOME/.local/share/kservices5/" ] && mkdir -p $HOME/.local/share/kservices5/
