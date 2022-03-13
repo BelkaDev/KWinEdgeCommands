@@ -1,0 +1,21 @@
+{
+    "name": "generic-kwin-command",
+    "displayName": "Kwin Command",
+    "version": "1.0.0",
+    "description": "A generic command for Kwin.",
+    "author": "BelkaDev",
+    "license": "GPL-3.0",
+    "main": "contents/code/main.js",
+    "scripts": {
+        "dev": "npm run start && journalctl -f",
+        "compile": "scripts/compile.sh && browserify contents/code/source.js -o contents/code/main.js",
+        "package": "scripts/package.sh",
+        "install": "npm run compile && npm run package",
+        "start": "scripts/start.sh",
+        "uninstall": "scripts/uninstall.sh"
+    },
+    "dependencies": {
+        "browserify": "^17.0.0",
+        "dom-parser": "^0.1.6"
+    }
+}
