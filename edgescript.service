@@ -1,0 +1,3 @@
+[D-BUS Service]
+Name=com.belka.edgescript
+Exec=npm start --prefix %{BASE_DIR}/.local/share/kservices5/edgescript/

@@ -1,0 +1,16 @@
+{
+    "name": "kwin-edgescript",
+    "version": "0.0.2",
+    "description": "Kwin script to add custom actions to Plasma edges.",
+    "main": "src/main.js",
+    "scripts": {
+        "start": "node src/main.js",
+        "stop": "kill $(pidof node src/main.js)"
+    },
+    "author": "Belkadev",
+    "license": "GPL-3.0",
+    "dependencies": {
+        "dbus-native": "^0.4.0",
+        "node-fetch": "^2.6.1"
+    }
+}
