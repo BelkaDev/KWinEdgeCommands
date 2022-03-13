@@ -49,7 +49,6 @@ else
 cp config.json.tmp "$HOME/.local/share/kservices5/edgescript/config.json"
 fi
 rm config.json.tmp
-chmod +x src/main.js #delete?
 
 
 cd kwinscript
