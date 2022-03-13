@@ -24,7 +24,7 @@ cd "$HOME/.local/share/kservices5/edgescript"
 else 
 repdir=$(mktemp -d)
 git clone https://github.com/BelkaDev/KWinEdgeCommands $repdir
-cd "$repdir
+cd $repdir
 fi
 
 [ ! -d "$HOME/.local/share/kservices5/" ] && mkdir -p $HOME/.local/share/kservices5/
